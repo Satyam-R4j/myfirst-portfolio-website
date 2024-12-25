@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+
+        body {
+
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: aquamarine;
+            font-size: 1.1rem;
+        }
+
+        .footer-link {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer-link:hover {
+            color: aquamarine;
+            font-size: 1.1rem;
+        }
+
+        main hr {
+            border: 0;
+            height: 1.2px;
+            margin: 60px 84px;
+            background: blueviolet;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+            align-items: center;
+        }
+
+        .text-grey {
+            color: grey;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondSection .box {
+            margin: 56px;
+            height: 2px;
+            width: 77vw;
+            background: white;
+            display: flex;
+        }
+
+
+
+        .leftSection {
+            font-size: 2.5rem;
+
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background-color: rgb(3, 5, 65);
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .rightSection img {
+            width: 80%;
+
+        }
+
+        .nameColor {
+            color: rgb(201, 4, 4);
+        }
+
+        .devColor {
+            color: rgb(1, 186, 1);
+        }
+
+        .secondSection .vertical {
+            height: 141px;
+            width: 1px;
+            background-color: white;
+            margin: 0 6vw
+        }
+
+        .image-top {
+            width: 36px;
+            left: -17px;
+            top: -40px;
+            position: relative;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            width: 150px;
+            color: grey;
+            position: relative;
+            top: 79px;
+            font-size: 12px;
+        }
+
+        footer {
+            background-color: #04043f;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 233px;
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: grey;
+            padding: 12px 0;
+        }
+
+        @media screen and (max-width: 1600px) {
+
+            body{
+                min-width: fit-content;
+            
+            }
+            .vertical-title,
+            .vertical-desc {
+                left: 45px;
+            }
+
+            .box {
+                flex-direction: column;
+            }
+
+            .secondSection .box {
+                width: 50vw;
+            }
+
+            .image-top {
+                top: 120px;
+            }
+
+            .secondSection .vertical {
+                height: unset;
+            }
+            
+            nav{
+                flex-direction: column;
+            }
+            .firstSection {
+                flex-direction: column-reverse;
+            }
+
+            .leftSection{
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .rightSection{
+                width: 360px !important;
+            }
+            
+            .secondSection {
+                height: 170vh;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="left">Satyam's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div>Hi, My name is <span class="nameColor">Satyam Raj</span></div>
+                <div>and I am a <span class="devColor">passionate</span></div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+
+        <hr>
+        <section class="secondSection">
+
+            <span class="text-grey">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <div class="box">
+
+                <div class="vertical">
+                    <img src="html.png" alt="" class="image-top">
+                    <div class="vertical-title">HTML developer <br> (2020-2022)</div>
+                    <div class="vertical-desc">Skilled HTML developer crafting user-friendly & responsive websites using
+                        HTML5 and modern frameworks and
+                        Building the foundation of web experiences with strong HTML & CSS expertise. Eager to contribute
+                        to a collaborative team.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="cyber-security.png" alt="" class="image-top">
+                    <div class="vertical-title">Cyber Security<br> (2022-2024)</div>
+                    <div class="vertical-desc">Skilled in threat detection, vulnerability analysis, and security
+                        controls to safeguard systems or data and also have two year's of linux Experience.
+
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="python.png" alt="" class="image-top">
+                    <div class="vertical-title">Python <br> (2023-2024)</div>
+                    <div class="vertical-desc">Python developer skilled in data analysis (NumPy, Pandas, Matplotlib) for
+                        data analysis and python is my also fevourite language.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="big_data.png" alt="" class="image-top">
+                    <div class="vertical-title">Data Scientist <br> (2024-20__)</div>
+                    <div class="vertical-desc">
+                        currently learning and excelling in field of data science using python.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="ai_ml.png" alt="" class="image-top">
+                    <div class="vertical-title">AI & ML <br> (2024-20__)</div>
+                    <div class="vertical-desc">Building intelligent machine using machine learning algorithm.
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="flex">
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Vicky's Developer Portfolio</h3>
+
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <a href="/" class="footer-link"><li>Home</li></a>
+                    <a href="/" class="footer-link"><li>Blog's</li></a>
+                    <a href="/" class="footer-link"><li>Product</li></a>
+                    
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <a class="footer-link" href="/"><li> href</li></a>
+                    <a class="footer-link" href="/"><li>connection</li></a>
+                    <a class="footer-link" href="/"><li>collaboration</li></a>
+                    <a class="footer-link" href="/"><li>Partner's</li></a>
+                </ul>
+            </div>
+            <div class="footer-forth">
+                <ul>
+                    <a href="/" class="footer-link"><li> Social-Media</li></a>
+                    <a href="/" class="footer-link"><li> Contribute</li></a>
+                    <a href="/" class="footer-link"><li> Contact</li></a>
+                    <a href="/" class="footer-link"><li>Privacy Policy</li></a>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-rights">
+            Copyright &copy; vickysportfolio.in | All rights reserved
+        </div>
+
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<span class="nameColor"><i>Web</i></span> Developer', '<span class="devColor"><i>Android</i></span> Developer', '<span class="devColor"><i>Data</i></span> Scientist.'],
+            typeSpeed: 50,
+            loop: true,
+        });
+    </script>
+
+
+
+</body>
+
+</html>
